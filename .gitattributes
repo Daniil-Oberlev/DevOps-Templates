@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+*.gitattributes text export-ignore
+.gitignore      text export-ignore
+
+* linguist-detectable=true
