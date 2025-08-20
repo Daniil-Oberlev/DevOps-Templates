@@ -16,7 +16,7 @@ def run_single_test(test_file):
         )
 
         success = result.returncode == 0
-        status = "✅ PASS" if success else "❌ FAIL"
+        status = "PASS" if success else "FAIL"
         print(f"{status}: {test_file}")
 
         return {
@@ -28,14 +28,14 @@ def run_single_test(test_file):
         }
 
     except subprocess.TimeoutExpired:
-        print(f"⏰ TIMEOUT: {test_file}")
+        print(f"TIMEOUT: {test_file}")
         return {
             'file': test_file,
             'success': False,
             'error': 'Timeout'
         }
     except (OSError, subprocess.SubprocessError) as e:
-        print(f"🚫 ERROR: {test_file} - {e}")
+        print(f"ERROR: {test_file} - {e}")
         return {
             'file': test_file,
             'success': False,

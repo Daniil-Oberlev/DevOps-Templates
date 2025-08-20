@@ -10,7 +10,7 @@ def main():
     print_results(analysis)
 
     badge_path = save_badge(analysis['coverage'])
-    print(f"\n🛡️  Coverage badge updated: {badge_path}")
+    print(f"\n Coverage badge updated: {badge_path}")
 
     return 0
 
