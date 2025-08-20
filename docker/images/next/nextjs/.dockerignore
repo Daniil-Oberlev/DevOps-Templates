@@ -1,0 +1,6 @@
+.git
+node_modules
+tests
+*.md
+.gitignore
+.next/cache
