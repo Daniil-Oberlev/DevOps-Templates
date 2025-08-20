@@ -2,5 +2,4 @@
 
 - [ ] nginx load balancer
 - [ ] nginx reverse proxy
-- [ ] nginx spa
 - [ ] nginx ssl
