@@ -1,5 +1,14 @@
 {
   "cSpell.words": [
-    "justfile"
+    "addgroup",
+    "adduser",
+    "appgroup",
+    "appuser",
+    "justfile",
+    "mycontainer",
+    "myimage",
+    "nosniff",
+    "pgrep",
+    "SAMEORIGIN"
   ]
 }
