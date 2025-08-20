@@ -10,3 +10,4 @@
 *.cfg         linguist-detectable=true
 *.conf        linguist-detectable=true
 .dockerignore linguist-detectable=true
+nginx.conf    linguist-detectable=true
