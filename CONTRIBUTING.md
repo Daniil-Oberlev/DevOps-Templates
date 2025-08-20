@@ -45,9 +45,9 @@
 
 2. Пушим в свою fork-версию:
 
-  ```bash
-  git push origin feat/your-feature
-  ```
+```bash
+git push origin feat/your-feature
+```
 
 ## ⏫ Создание Pull Request
 
