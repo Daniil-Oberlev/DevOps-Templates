@@ -4,11 +4,14 @@
     "adduser",
     "appgroup",
     "appuser",
+    "GOARCH",
     "justfile",
+    "ldflags",
     "mycontainer",
     "myimage",
     "nosniff",
     "pgrep",
-    "SAMEORIGIN"
+    "SAMEORIGIN",
+    "tzdata"
   ]
 }
