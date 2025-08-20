@@ -4,3 +4,4 @@
 - [ ] nginx reverse proxy
 - [ ] nginx ssl
 - [ ] csharp docker
+- [ ] test coverage
