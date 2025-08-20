@@ -1,0 +1,17 @@
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
+COPY . .
+RUN yarn build
+FROM node:18-alpine AS runner
+WORKDIR /app
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+COPY --from=builder --chown=appuser:appgroup /app/build ./build
+COPY --from=builder --chown=appuser:appgroup /app/public ./public
+RUN npm install -g serve
+EXPOSE 5173
+HEALTHCHECK --interval=30s --timeout=3s CMD pgrep node || exit 1
+ENV NODE_ENV=production
+CMD ["serve","-s","build","-l","5173"]

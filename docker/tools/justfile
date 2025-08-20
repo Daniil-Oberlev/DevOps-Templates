@@ -1,17 +1,18 @@
-container-name := "next-container"
-image-name := "myapp"
+image-name := "myimage"
+container-name := "mycontainer"
+port := "3000"
 
 build:
     docker build -t {{image-name}}:latest  .
 
 run:
-    docker run -d --name {{container-name}} -p 3000:3000 {{image-name}}:latest
+    docker run -d --name {{container-name}} -p {{port}}:{{port}} {{image-name}}:latest
 
 check:
     sleep 5
     docker ps -a
     docker logs {{container-name}}
-    curl -f http://localhost:3000/
+    curl -f http://localhost:{{port}}/
     docker inspect --format='{{{{json .State.Health.Status}}}}' {{container-name}}
 
 stop:
