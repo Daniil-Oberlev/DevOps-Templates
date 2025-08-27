@@ -1,9 +1,11 @@
 {
   "cSpell.words": [
+    "алёрты",
     "коммита",
     "конфигов",
     "Мёрж",
     "ревьюверам",
+    "фейлит",
     "Форкаем",
     "addgroup",
     "adduser",
@@ -20,8 +22,10 @@
     "nosniff",
     "pgrep",
     "pycache",
+    "pyproject",
     "pytest",
     "SAMEORIGIN",
+    "sarif",
     "tzdata",
     "Verdana",
     "YELLOWGREEN"
