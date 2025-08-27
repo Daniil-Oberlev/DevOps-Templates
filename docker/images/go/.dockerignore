@@ -1,7 +1,8 @@
 .git
-*.md
 bin
 tests
+
+*.md
 *.log
 .env
 .gitignore
