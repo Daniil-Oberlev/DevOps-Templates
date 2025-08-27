@@ -4,6 +4,3 @@ pre-commit:
     formatting:
       run: ./utils/format.sh
       stage_fixed: true
-
-    build:
-      run: python ./utils/coverage/generate_coverage.py
