@@ -1,16 +1,20 @@
 {
   "cSpell.words": [
     "алёрты",
+    "кастомной",
     "коммита",
     "конфигов",
     "Мёрж",
+    "Раскомментируй",
     "ревьюверам",
     "фейлит",
     "Форкаем",
+    "хардкод",
     "addgroup",
     "adduser",
     "appgroup",
     "appuser",
+    "autobuild",
     "BRIGHTGREEN",
     "GOARCH",
     "gofmt",
@@ -26,6 +30,7 @@
     "pytest",
     "SAMEORIGIN",
     "sarif",
+    "semgrep",
     "tzdata",
     "Verdana",
     "YELLOWGREEN"
