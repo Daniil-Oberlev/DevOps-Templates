@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-ROOT_DIR=$(pwd)
-NEXT_DIR="$ROOT_DIR/docker/images/frontend/next"
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+ROOT_DIR=$(realpath "$SCRIPT_DIR/../../../../..")
+NEXT_DIR="$SCRIPT_DIR"
 
 cleanup() {
     echo "Запуск очистки..."
@@ -31,6 +32,7 @@ cleanup() {
 trap cleanup EXIT
 
 cd "$NEXT_DIR"
+
 npx create-next-app@latest next-app --yes
 cd next-app
 
@@ -44,7 +46,7 @@ const nextConfig: NextConfig = {
 export default nextConfig;
 EOL
 
-cp ../Dockerfile.npm ./Dockerfile
+cp "$NEXT_DIR/Dockerfile.npm" ./Dockerfile
 
 docker build -t next-app:latest .
 docker run -d --name next-app -p 3000:3000 next-app:latest
@@ -62,3 +64,4 @@ else
     exit 1
 fi
 
+echo "Тест завершен успешно!"
