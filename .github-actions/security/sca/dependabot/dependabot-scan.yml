@@ -1,0 +1,40 @@
+version: 2
+updates:
+  # Конфигурация для npm (JavaScript/TypeScript)
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    open-pull-requests-limit: 10
+    target-branch: 'develop'
+    labels: ['dependencies', 'javascript']
+    # ignore:  # Игнорировать определенные зависимости
+    #   - dependency-name: "express"
+    #     versions: ["4.x"]
+
+  # Конфигурация для pip (Python)
+  - package-ecosystem: 'pip'
+    directory: '/' # Путь к requirements.txt или pyproject.toml
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 5
+    target-branch: 'develop'
+    labels: ['dependencies', 'python']
+
+  # Конфигурация для Docker
+  - package-ecosystem: 'docker'
+    directory: '/' # Путь к Dockerfile или docker-compose.yml
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 5
+    target-branch: 'develop'
+    labels: ['dependencies', 'docker']
+
+  # Конфигурация для GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/' # Путь к .github/workflows
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 5
+    target-branch: 'develop'
+    labels: ['dependencies', 'github-actions']
