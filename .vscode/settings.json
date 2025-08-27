@@ -1,7 +1,10 @@
 {
   "cSpell.words": [
+    "коммита",
+    "конфигов",
     "Мёрж",
     "ревьюверам",
+    "Форкаем",
     "addgroup",
     "adduser",
     "appgroup",
@@ -14,6 +17,7 @@
     "myimage",
     "nosniff",
     "pgrep",
+    "pycache",
     "SAMEORIGIN",
     "tzdata",
     "Verdana",
