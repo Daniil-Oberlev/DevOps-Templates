@@ -6,4 +6,4 @@ pre-commit:
       stage_fixed: true
 
     build:
-      run: python utils/coverage/generate_coverage.py
+      run: python ./utils/coverage/generate_coverage.py

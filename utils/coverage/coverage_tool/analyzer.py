@@ -16,11 +16,10 @@ def analyze_test_coverage():
     results = []
 
     if test_files:
-        print(f"📋 Found {total_tests} test files:")
+        print(f"Found {total_tests} test files:")
         for test_file in test_files:
             print(f"   - {test_file}")
 
-        print("\n Running tests...")
         results, passed, total_tests = run_tests(test_files)
         coverage = calculate_coverage(passed, total_tests)
 

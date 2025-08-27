@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # Исключённые папки
-EXCLUDE_DIRS = {'.git', '.github', '.vscode'}
+EXCLUDE_DIRS = {'.git', '.github', '.vscode', '__pycache__'}
 CONTAINER_DIRS = {'tools', 'utils', 'coverage'}
 
 # Файлы проектов
