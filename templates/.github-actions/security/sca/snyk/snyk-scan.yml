@@ -1,0 +1,30 @@
+name: Snyk Dependency Scan
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up project environment # Адаптируй под язык проекта
+        run: |
+          # Для Node.js: npm ci
+          # Для Python: python -m pip install --upgrade pip && pip install -r requirements.txt
+          # Для Go: go mod download
+          echo "Dependencies installed (replace with actual command)"
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions@master # Универсальный action; замени на snyk/actions/node, snyk/actions/python и т.д.
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: test # Проверяет зависимости и фейлит при уязвимостях
+          args: --all-projects --severity-threshold=low --sarif-file-output=snyk.sarif # Сканирует все манифесты, порог: low/medium/high/critical
+        continue-on-error: true # Продолжить для загрузки SARIF даже при ошибке
+      - name: Upload SARIF to GitHub
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: snyk.sarif

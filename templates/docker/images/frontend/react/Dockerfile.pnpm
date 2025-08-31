@@ -1,0 +1,25 @@
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+RUN npm install -g pnpm
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+COPY . .
+RUN pnpm build
+
+FROM node:20-alpine AS runner
+
+WORKDIR /app
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+
+COPY --from=builder --chown=appuser:appgroup /app/build ./build
+COPY --from=builder --chown=appuser:appgroup /app/public ./public
+
+RUN npm install -g serve
+EXPOSE 5173
+
+HEALTHCHECK --interval=30s --timeout=3s CMD pgrep node || exit 1
+ENV NODE_ENV=production
+CMD ["serve","-s","build","-l","5173"]

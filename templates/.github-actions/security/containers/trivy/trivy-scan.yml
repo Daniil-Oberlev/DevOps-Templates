@@ -1,0 +1,37 @@
+name: Trivy Container Scan
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch: # Ручной запуск через GitHub UI
+
+permissions:
+  contents: read
+  security-events: write # Для загрузки SARIF в Security tab
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image # Опционально: сборка образа
+        run: |
+          docker build -t my-app:latest .
+        # Раскомментируй, если образ нужно собрать
+        # Замени my-app:latest на имя твоего образа
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'my-app:latest' # Укажи образ (локальный или в реестре, например, docker.io/my-app:latest)
+          format: 'sarif' # Формат отчета для GitHub
+          output: 'trivy.sarif'
+          severity: 'HIGH,CRITICAL' # Фейл CI на уязвимости HIGH и CRITICAL
+        # Для private реестров добавь:
+        # env:
+        #   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        #   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Upload SARIF to GitHub
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: trivy.sarif
