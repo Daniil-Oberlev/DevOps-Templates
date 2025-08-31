@@ -11,3 +11,6 @@
 *.conf        linguist-detectable=true
 .dockerignore linguist-detectable=true
 nginx.conf    linguist-detectable=true
+
+*.png binary
+*.svg binary
