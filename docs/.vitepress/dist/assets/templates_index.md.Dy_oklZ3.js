@@ -1,0 +1,21 @@
+import { _ as a, c as t, o as r, af as i } from './chunks/framework.Cm3tdt7z.js'
+const _ = JSON.parse(
+    '{"title":"Каталог шаблонов","description":"","frontmatter":{"title":"Каталог шаблонов"},"headers":[],"relativePath":"templates/index.md","filePath":"templates/index.md"}'
+  ),
+  l = { name: 'templates/index.md' }
+function n(o, e, s, c, d, h) {
+  return (
+    r(),
+    t('div', null, [
+      ...(e[0] ||
+        (e[0] = [
+          i(
+            '<h1 id="🗂️-каталог-devops-шаблонов" tabindex="-1">🗂️ Каталог DevOps-шаблонов <a class="header-anchor" href="#🗂️-каталог-devops-шаблонов" aria-label="Permalink to “🗂️ Каталог DevOps-шаблонов”">​</a></h1><p>Здесь собраны все готовые решения для автоматизации ваших процессов.</p><h2 id="доступные-категории" tabindex="-1">Доступные категории <a class="header-anchor" href="#доступные-категории" aria-label="Permalink to “Доступные категории”">​</a></h2><ul><li><a href="./docker/"><strong>Docker</strong></a> - Оптимизированные Dockerfile</li><li><a href="./kubernetes/"><strong>Kubernetes</strong></a> - Манифесты развертывания</li><li><a href="./github-actions/"><strong>GitHub Actions</strong></a> - Workflow для CI/CD</li><li><a href="./jenkins/"><strong>Jenkins</strong></a> - Пайплайны и скрипты</li><li><a href="./nginx/"><strong>Nginx</strong></a> - Конфигурации веб-сервера</li><li><a href="./scripts/"><strong>Bash-скрипты</strong></a> - Утилиты для повседневных задач</li></ul><h2 id="как-использовать" tabindex="-1">Как использовать <a class="header-anchor" href="#как-использовать" aria-label="Permalink to “Как использовать”">​</a></h2><ol><li>Выберите нужную категорию в боковой панели слева</li><li>Изучите доступные шаблоны</li><li>Скопируйте код и адаптируйте под свои нужды</li><li>Используйте в своих проектах!</li></ol><hr><blockquote><p>Для навигации используйте боковую панель слева или ссылки выше.</p></blockquote>',
+            8
+          )
+        ]))
+    ])
+  )
+}
+const f = a(l, [['render', n]])
+export { _ as __pageData, f as default }

@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="ru-RU" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Next.js | DevOps Templates</title>
+    <meta
+      name="description"
+      content="Набор шаблонов, скриптов и конфигураций для ускорения развертывания, обеспечения безопасности и стандартизации DevOps-процессов"
+    />
+    <meta name="generator" content="VitePress v2.0.0-alpha.12" />
+    <link rel="preload stylesheet" href="/assets/style.Ci-qo6Tb.css" as="style" />
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style" />
+
+    <script type="module" src="/assets/app.CjqSW7ZD.js"></script>
+    <link
+      rel="preload"
+      href="/assets/inter-roman-latin.Di8DUHzh.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link rel="modulepreload" href="/assets/chunks/theme.BjcjPSP3.js" />
+    <link rel="modulepreload" href="/assets/chunks/framework.Cm3tdt7z.js" />
+    <link rel="modulepreload" href="/assets/templates_docker_frontend_next.md.Djp5ZNYw.lean.js" />
+    <link rel="apple-touch-icon" href="/favicons/apple-icon.png" />
+    <link rel="icon" href="/favicons/icon.svg" />
+    <script id="check-dark-mode">
+      ;(() => {
+        const e = localStorage.getItem('vitepress-theme-appearance') || 'auto',
+          a = window.matchMedia('(prefers-color-scheme: dark)').matches
+        ;(!e || e === 'auto' ? a : e === 'dark') && document.documentElement.classList.add('dark')
+      })()
+    </script>
+    <script id="check-mac-os">
+      document.documentElement.classList.toggle(
+        'mac',
+        /Mac|iPhone|iPod|iPad/i.test(navigator.platform)
+      )
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="Layout" data-v-a1287e7a>
+        <!--[--><!--]--><!--[--><span tabindex="-1" data-v-492508fc></span
+        ><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-492508fc>Skip to content</a
+        ><!--]--><!---->
+        <header class="VPNav" data-v-a1287e7a data-v-a0b2321a>
+          <div class="VPNavBar" data-v-a0b2321a data-v-b0e57036>
+            <div class="wrapper" data-v-b0e57036>
+              <div class="container" data-v-b0e57036>
+                <div class="title" data-v-b0e57036>
+                  <div class="VPNavBarTitle has-sidebar" data-v-b0e57036 data-v-381c7abb>
+                    <a class="title" href="/" data-v-381c7abb
+                      ><!--[--><!--]--><!----><span data-v-381c7abb>DevOps Templates</span
+                      ><!--[--><!--]--></a
+                    >
+                  </div>
+                </div>
+                <div class="content" data-v-b0e57036>
+                  <div class="content-body" data-v-b0e57036>
+                    <!--[--><!--]-->
+                    <div class="VPNavBarSearch search" data-v-b0e57036><!----></div>
+                    <nav
+                      aria-labelledby="main-nav-aria-label"
+                      class="VPNavBarMenu menu"
+                      data-v-b0e57036
+                      data-v-860fda33
+                    >
+                      <span id="main-nav-aria-label" class="visually-hidden" data-v-860fda33>
+                        Main Navigation </span
+                      ><!--[--><!--[--><a
+                        class="VPLink link VPNavBarMenuLink"
+                        href="/"
+                        tabindex="0"
+                        data-v-860fda33
+                        data-v-956ec74c
+                        ><!--[--><span data-v-956ec74c>Главная</span
+                        ><!--]--></a
+                      ><!--]--><!--[--><a
+                        class="VPLink link VPNavBarMenuLink"
+                        href="/templates/"
+                        tabindex="0"
+                        data-v-860fda33
+                        data-v-956ec74c
+                        ><!--[--><span data-v-956ec74c>Примеры</span
+                        ><!--]--></a
+                      ><!--]--><!--]-->
+                    </nav>
+                    <!---->
+                    <div class="VPNavBarAppearance appearance" data-v-b0e57036 data-v-af096f4a>
+                      <button
+                        class="VPSwitch VPSwitchAppearance"
+                        type="button"
+                        role="switch"
+                        title
+                        aria-checked="false"
+                        data-v-af096f4a
+                        data-v-e40a8bb6
+                        data-v-4a1c76db
+                      >
+                        <span class="check" data-v-4a1c76db
+                          ><span class="icon" data-v-4a1c76db
+                            ><!--[--><span class="vpi-sun sun" data-v-e40a8bb6></span
+                            ><span class="vpi-moon moon" data-v-e40a8bb6></span
+                            ><!--]--></span
+                          ></span
+                        >
+                      </button>
+                    </div>
+                    <div
+                      class="VPSocialLinks VPNavBarSocialLinks social-links"
+                      data-v-b0e57036
+                      data-v-164c457f
+                      data-v-c26cd89d
+                    >
+                      <!--[--><a
+                        class="VPSocialLink no-icon"
+                        href="https://github.com/Daniil-Oberlev/DevOps-Templates"
+                        aria-label="github"
+                        target="_blank"
+                        rel="me noopener"
+                        data-v-c26cd89d
+                        data-v-874c0b76
+                        ><span class="vpi-social-github"></span></a
+                      ><!--]-->
+                    </div>
+                    <div
+                      class="VPFlyout VPNavBarExtra extra"
+                      data-v-b0e57036
+                      data-v-925effce
+                      data-v-0b52c8fe
+                    >
+                      <button
+                        type="button"
+                        class="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-label="extra navigation"
+                        data-v-0b52c8fe
+                      >
+                        <span class="vpi-more-horizontal icon" data-v-0b52c8fe></span>
+                      </button>
+                      <div class="menu" data-v-0b52c8fe>
+                        <div class="VPMenu" data-v-0b52c8fe data-v-ca69ded9>
+                          <!----><!--[--><!--[--><!---->
+                          <div class="group" data-v-925effce>
+                            <div class="item appearance" data-v-925effce>
+                              <p class="label" data-v-925effce>Appearance</p>
+                              <div class="appearance-action" data-v-925effce>
+                                <button
+                                  class="VPSwitch VPSwitchAppearance"
+                                  type="button"
+                                  role="switch"
+                                  title
+                                  aria-checked="false"
+                                  data-v-925effce
+                                  data-v-e40a8bb6
+                                  data-v-4a1c76db
+                                >
+                                  <span class="check" data-v-4a1c76db
+                                    ><span class="icon" data-v-4a1c76db
+                                      ><!--[--><span class="vpi-sun sun" data-v-e40a8bb6></span
+                                      ><span class="vpi-moon moon" data-v-e40a8bb6></span
+                                      ><!--]--></span
+                                    ></span
+                                  >
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="group" data-v-925effce>
+                            <div class="item social-links" data-v-925effce>
+                              <div
+                                class="VPSocialLinks social-links-list"
+                                data-v-925effce
+                                data-v-c26cd89d
+                              >
+                                <!--[--><a
+                                  class="VPSocialLink no-icon"
+                                  href="https://github.com/Daniil-Oberlev/DevOps-Templates"
+                                  aria-label="github"
+                                  target="_blank"
+                                  rel="me noopener"
+                                  data-v-c26cd89d
+                                  data-v-874c0b76
+                                  ><span class="vpi-social-github"></span></a
+                                ><!--]-->
+                              </div>
+                            </div>
+                          </div>
+                          <!--]--><!--]-->
+                        </div>
+                      </div>
+                    </div>
+                    <!--[--><!--]--><button
+                      type="button"
+                      class="VPNavBarHamburger hamburger"
+                      aria-label="mobile navigation"
+                      aria-expanded="false"
+                      aria-controls="VPNavScreen"
+                      data-v-b0e57036
+                      data-v-5dea55bf
+                    >
+                      <span class="container" data-v-5dea55bf
+                        ><span class="top" data-v-5dea55bf></span
+                        ><span class="middle" data-v-5dea55bf></span
+                        ><span class="bottom" data-v-5dea55bf></span
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider" data-v-b0e57036>
+              <div class="divider-line" data-v-b0e57036></div>
+            </div>
+          </div>
+          <!---->
+        </header>
+        <div class="VPLocalNav has-sidebar empty" data-v-a1287e7a data-v-5f9a0aea>
+          <div class="container" data-v-5f9a0aea>
+            <button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-5f9a0aea>
+              <span class="vpi-align-left menu-icon" data-v-5f9a0aea></span
+              ><span class="menu-text" data-v-5f9a0aea>Menu</span>
+            </button>
+            <div
+              class="VPLocalNavOutlineDropdown"
+              style="--vp-vh: 0px"
+              data-v-5f9a0aea
+              data-v-8ca43daf
+            >
+              <button data-v-8ca43daf>Return to top</button
+              ><!---->
+            </div>
+          </div>
+        </div>
+        <aside class="VPSidebar" data-v-a1287e7a data-v-8add1462>
+          <div class="curtain" data-v-8add1462></div>
+          <nav
+            class="nav"
+            id="VPSidebarNav"
+            aria-labelledby="sidebar-aria-label"
+            tabindex="-1"
+            data-v-8add1462
+          >
+            <span class="visually-hidden" id="sidebar-aria-label" data-v-8add1462>
+              Sidebar Navigation </span
+            ><!--[--><!--]--><!--[-->
+            <div class="no-transition group" data-v-b60d39e6>
+              <section class="VPSidebarItem level-0 has-active" data-v-b60d39e6 data-v-c467f688>
+                <div class="item" role="button" tabindex="0" data-v-c467f688>
+                  <div class="indicator" data-v-c467f688></div>
+                  <h2 class="text" data-v-c467f688>Docker</h2>
+                  <!---->
+                </div>
+                <div class="items" data-v-c467f688>
+                  <!--[-->
+                  <section class="VPSidebarItem level-1 has-active" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" tabindex="0" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <h3 class="text" data-v-c467f688>Frontend</h3>
+                      <!---->
+                    </div>
+                    <div class="items" data-v-c467f688>
+                      <!--[-->
+                      <div class="VPSidebarItem level-2 is-link" data-v-c467f688 data-v-c467f688>
+                        <div class="item" data-v-c467f688>
+                          <div class="indicator" data-v-c467f688></div>
+                          <a
+                            class="VPLink link link"
+                            href="/templates/docker/frontend/react.html"
+                            data-v-c467f688
+                            ><!--[-->
+                            <p class="text" data-v-c467f688>React</p>
+                            <!--]--></a
+                          ><!---->
+                        </div>
+                        <!---->
+                      </div>
+                      <div class="VPSidebarItem level-2 is-link" data-v-c467f688 data-v-c467f688>
+                        <div class="item" data-v-c467f688>
+                          <div class="indicator" data-v-c467f688></div>
+                          <a
+                            class="VPLink link link"
+                            href="/templates/docker/frontend/next.html"
+                            data-v-c467f688
+                            ><!--[-->
+                            <p class="text" data-v-c467f688>Next.js</p>
+                            <!--]--></a
+                          ><!---->
+                        </div>
+                        <!---->
+                      </div>
+                      <!--]-->
+                    </div>
+                  </section>
+                  <section class="VPSidebarItem level-1" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" tabindex="0" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <h3 class="text" data-v-c467f688>Languages</h3>
+                      <!---->
+                    </div>
+                    <div class="items" data-v-c467f688>
+                      <!--[-->
+                      <div class="VPSidebarItem level-2 is-link" data-v-c467f688 data-v-c467f688>
+                        <div class="item" data-v-c467f688>
+                          <div class="indicator" data-v-c467f688></div>
+                          <a
+                            class="VPLink link link"
+                            href="/templates/docker/languages/go.html"
+                            data-v-c467f688
+                            ><!--[-->
+                            <p class="text" data-v-c467f688>Go</p>
+                            <!--]--></a
+                          ><!---->
+                        </div>
+                        <!---->
+                      </div>
+                      <div class="VPSidebarItem level-2 is-link" data-v-c467f688 data-v-c467f688>
+                        <div class="item" data-v-c467f688>
+                          <div class="indicator" data-v-c467f688></div>
+                          <a
+                            class="VPLink link link"
+                            href="/templates/docker/languages/node.html"
+                            data-v-c467f688
+                            ><!--[-->
+                            <p class="text" data-v-c467f688>Node.js</p>
+                            <!--]--></a
+                          ><!---->
+                        </div>
+                        <!---->
+                      </div>
+                      <div class="VPSidebarItem level-2 is-link" data-v-c467f688 data-v-c467f688>
+                        <div class="item" data-v-c467f688>
+                          <div class="indicator" data-v-c467f688></div>
+                          <a
+                            class="VPLink link link"
+                            href="/templates/docker/languages/python.html"
+                            data-v-c467f688
+                            ><!--[-->
+                            <p class="text" data-v-c467f688>Python</p>
+                            <!--]--></a
+                          ><!---->
+                        </div>
+                        <!---->
+                      </div>
+                      <!--]-->
+                    </div>
+                  </section>
+                  <!--]-->
+                </div>
+              </section>
+            </div>
+            <div class="no-transition group" data-v-b60d39e6>
+              <section class="VPSidebarItem level-0" data-v-b60d39e6 data-v-c467f688>
+                <!---->
+                <div class="items" data-v-c467f688>
+                  <!--[-->
+                  <div class="VPSidebarItem level-1" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <p class="text" data-v-c467f688>Kubernetes</p>
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <div class="VPSidebarItem level-1" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <p class="text" data-v-c467f688>GitHub Actions</p>
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <div class="VPSidebarItem level-1" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <p class="text" data-v-c467f688>Jenkins</p>
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <div class="VPSidebarItem level-1" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <p class="text" data-v-c467f688>Nginx</p>
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <div class="VPSidebarItem level-1" data-v-c467f688 data-v-c467f688>
+                    <div class="item" role="button" data-v-c467f688>
+                      <div class="indicator" data-v-c467f688></div>
+                      <p class="text" data-v-c467f688>Scripts</p>
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                  <!--]-->
+                </div>
+              </section>
+            </div>
+            <!--]--><!--[--><!--]-->
+          </nav>
+        </aside>
+        <div class="VPContent has-sidebar" id="VPContent" data-v-a1287e7a data-v-8d2a3c6c>
+          <div class="VPDoc has-sidebar has-aside" data-v-8d2a3c6c data-v-e9c01962>
+            <!--[--><!--]-->
+            <div class="container" data-v-e9c01962>
+              <div class="aside" data-v-e9c01962>
+                <div class="aside-curtain" data-v-e9c01962></div>
+                <div class="aside-container" data-v-e9c01962>
+                  <div class="aside-content" data-v-e9c01962>
+                    <div class="VPDocAside" data-v-e9c01962 data-v-6d7b3c46>
+                      <!--[--><!--]--><!--[--><!--]-->
+                      <nav
+                        aria-labelledby="doc-outline-aria-label"
+                        class="VPDocAsideOutline"
+                        data-v-6d7b3c46
+                        data-v-3dd0d1cf
+                      >
+                        <div class="content" data-v-3dd0d1cf>
+                          <div class="outline-marker" data-v-3dd0d1cf></div>
+                          <div
+                            aria-level="2"
+                            class="outline-title"
+                            id="doc-outline-aria-label"
+                            role="heading"
+                            data-v-3dd0d1cf
+                          >
+                            On this page
+                          </div>
+                          <ul class="VPDocOutlineItem root" data-v-3dd0d1cf data-v-92aaa366>
+                            <!--[--><!--]-->
+                          </ul>
+                        </div>
+                      </nav>
+                      <!--[--><!--]-->
+                      <div class="spacer" data-v-6d7b3c46></div>
+                      <!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content" data-v-e9c01962>
+                <div class="content-container" data-v-e9c01962>
+                  <!--[--><!--]-->
+                  <main class="main" data-v-e9c01962>
+                    <div
+                      style="position: relative"
+                      class="vp-doc _templates_docker_frontend_next"
+                      data-v-e9c01962
+                    >
+                      <div>
+                        <h1 id="next-js" tabindex="-1">
+                          Next.js
+                          <a
+                            class="header-anchor"
+                            href="#next-js"
+                            aria-label="Permalink to “Next.js”"
+                            >​</a
+                          >
+                        </h1>
+                      </div>
+                    </div>
+                  </main>
+                  <footer class="VPDocFooter" data-v-e9c01962 data-v-4f9813fa>
+                    <!--[--><!--]--><!---->
+                    <nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-4f9813fa>
+                      <span class="visually-hidden" id="doc-footer-aria-label" data-v-4f9813fa
+                        >Pager</span
+                      >
+                      <div class="pager" data-v-4f9813fa>
+                        <a
+                          class="VPLink link pager-link prev"
+                          href="/templates/docker/frontend/react.html"
+                          data-v-4f9813fa
+                          ><!--[--><span class="desc" data-v-4f9813fa>Previous page</span
+                          ><span class="title" data-v-4f9813fa>React</span
+                          ><!--]--></a
+                        >
+                      </div>
+                      <div class="pager" data-v-4f9813fa>
+                        <a
+                          class="VPLink link pager-link next"
+                          href="/templates/docker/languages/go.html"
+                          data-v-4f9813fa
+                          ><!--[--><span class="desc" data-v-4f9813fa>Next page</span
+                          ><span class="title" data-v-4f9813fa>Go</span
+                          ><!--]--></a
+                        >
+                      </div>
+                    </nav>
+                  </footer>
+                  <!--[--><!--]-->
+                </div>
+              </div>
+            </div>
+            <!--[--><!--]-->
+          </div>
+        </div>
+        <footer class="VPFooter has-sidebar" data-v-a1287e7a data-v-5e8932eb>
+          <div class="container" data-v-5e8932eb>
+            <p class="message" data-v-5e8932eb>Released under the MIT License.</p>
+            <p class="copyright" data-v-5e8932eb>Copyright © 2025 Daniil Oberlev</p>
+          </div>
+        </footer>
+        <!--[--><!--]-->
+      </div>
+    </div>
+    <script>
+      window.__VP_HASH_MAP__ = JSON.parse(
+        '{"index.md":"Cz3nfm2v","templates_docker_frontend_next.md":"Djp5ZNYw","templates_docker_frontend_react.md":"DHKRdSjD","templates_docker_index.md":"BMnGnepm","templates_docker_languages_go.md":"LH4llfpq","templates_docker_languages_node.md":"DV8ohhdc","templates_docker_languages_python.md":"BWzjruZp","templates_github-actions_index.md":"B59UT72t","templates_index.md":"Dy_oklZ3","templates_jenkins_index.md":"CagWU4Y_","templates_kubernetes_index.md":"D1V_nIkx","templates_nginx_index.md":"qztcWS-V","templates_scripts_index.md":"BtxhGvPQ"}'
+      )
+      window.__VP_SITE_DATA__ = JSON.parse(
+        '{"lang":"ru-RU","dir":"ltr","title":"DevOps Templates","description":"Набор шаблонов, скриптов и конфигураций для ускорения развертывания, обеспечения безопасности и стандартизации DevOps-процессов","base":"/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"nav":[{"text":"Главная","link":"/"},{"text":"Примеры","link":"/templates/"}],"sidebar":[{"text":"Docker","items":[{"text":"Frontend","items":[{"text":"React","link":"/templates/docker/frontend/react"},{"text":"Next.js","link":"/templates/docker/frontend/next"}]},{"text":"Languages","items":[{"text":"Go","link":"/templates/docker/languages/go"},{"text":"Node.js","link":"/templates/docker/languages/node"},{"text":"Python","link":"/templates/docker/languages/python"}]}]},{"text":"Kubernetes"},{"text":"GitHub Actions"},{"text":"Jenkins"},{"text":"Nginx"},{"text":"Scripts"}],"socialLinks":[{"icon":"github","link":"https://github.com/Daniil-Oberlev/DevOps-Templates"}],"footer":{"message":"Released under the MIT License.","copyright":"Copyright © 2025 Daniil Oberlev"}},"locales":{},"scrollOffset":134,"cleanUrls":false,"additionalConfig":{}}'
+      )
+    </script>
+  </body>
+</html>

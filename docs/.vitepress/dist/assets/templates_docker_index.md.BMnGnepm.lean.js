@@ -1,0 +1,10 @@
+import { _ as i, c as a, o as n, af as e } from './chunks/framework.Cm3tdt7z.js'
+const o = JSON.parse(
+    '{"title":"🐳 Docker Templates","description":"","frontmatter":{},"headers":[],"relativePath":"templates/docker/index.md","filePath":"templates/docker/index.md"}'
+  ),
+  l = { name: 'templates/docker/index.md' }
+function t(h, s, k, p, r, F) {
+  return (n(), a('div', null, [...(s[0] || (s[0] = [e('', 7)]))]))
+}
+const c = i(l, [['render', t]])
+export { o as __pageData, c as default }
