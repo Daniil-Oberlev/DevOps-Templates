@@ -19,6 +19,7 @@
     "aquasecurity",
     "autobuild",
     "BRIGHTGREEN",
+    "favicons",
     "GOARCH",
     "gofmt",
     "golangci",
