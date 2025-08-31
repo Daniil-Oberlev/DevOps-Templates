@@ -13,14 +13,29 @@ hero:
       link: /guide/getting-started
 
 features:
-  - title: GitHub Actions
+  - icon:
+      src: /icons/github-actions.svg
+    title: GitHub Actions
     details: Автоматизируйте сборку, тестирование и деплой с помощью готовых GitHub Actions скриптов
-  - title: Docker
+    link: templates/github-actions
+  - icon:
+      src: /icons/docker.svg
+    title: Docker
     details: Оптимизированные Dockerfile для различных языков и фреймворков
-  - title: Nginx
+    link: templates/docker
+  - icon:
+      src: /icons/nginx.svg
+    title: Nginx
     details: Готовые конфиги с оптимизацией производительности, безопасными заголовками
-  - title: Utility Scripts
+    link: templates/nginx
+  - icon:
+      src: /icons/bash.svg
+    title: Utility Scripts
     details: Коллекция bash-скриптов для повседневных задач
-  - title: Jenkins
-    details: Готовые решения для сложных сценариев развертывания.
+    link: templates/scripts
+  - icon:
+      src: /icons/jenkins.svg
+    title: Jenkins
+    details: Готовые решения для сложных сценариев развертывания
+    link: templates/jenkins
 ---
