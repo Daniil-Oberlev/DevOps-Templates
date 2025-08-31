@@ -6,7 +6,7 @@ export default defineConfig({
     'Набор шаблонов, скриптов и конфигураций для ускорения развертывания, обеспечения безопасности и стандартизации DevOps-процессов',
   head: [
     ['link', { rel: 'apple-touch-icon', href: '/assets/favicons/apple-icon.png' }],
-    ['link', { rel: 'icon', href: '/assets/favicons/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/assets/favicons/icon.svg' }]
   ],
   themeConfig: {
     nav: [
