@@ -37,5 +37,6 @@
     "tzdata",
     "Verdana",
     "YELLOWGREEN"
-  ]
+  ],
+  "cSpell.ignorePaths": ["package.json", "yarn.lock", "node_modules", ".gitignore"]
 }
