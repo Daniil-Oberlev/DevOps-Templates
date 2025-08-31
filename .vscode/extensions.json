@@ -3,6 +3,7 @@
     "editorconfig.editorconfig",
     "ms-azuretools.vscode-docker",
     "nefrob.vscode-just-syntax",
-    "william-voyek.vscode-nginx"
+    "william-voyek.vscode-nginx",
+    "nicolasvuillamy.vscode-groovy-lint"
   ]
 }
