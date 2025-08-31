@@ -16,6 +16,58 @@ export default defineConfig({
       { text: 'Главная', link: '/' },
       { text: 'Примеры', link: '/templates/' }
     ],
+    sidebar: [
+      {
+        text: 'Docker',
+        items: [
+          {
+            text: 'Frontend',
+            items: [
+              {
+                text: 'React',
+                link: '/templates/docker/frontend/react'
+              },
+              {
+                text: 'Next.js',
+                link: '/templates/docker/frontend/next'
+              }
+            ]
+          },
+          {
+            text: 'Languages',
+            items: [
+              {
+                text: 'Go',
+                link: '/templates/docker/languages/go'
+              },
+              {
+                text: 'Node.js',
+                link: '/templates/docker/languages/node'
+              },
+              {
+                text: 'Python',
+                link: '/templates/docker/languages/python'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        text: 'Kubernetes'
+      },
+      {
+        text: 'GitHub Actions'
+      },
+      {
+        text: 'Jenkins'
+      },
+      {
+        text: 'Nginx'
+      },
+      {
+        text: 'Scripts'
+      }
+    ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/Daniil-Oberlev/DevOps-Templates' }],
     footer: {
       message: 'Released under the MIT License.',
