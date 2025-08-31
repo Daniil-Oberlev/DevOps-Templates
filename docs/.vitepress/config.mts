@@ -21,5 +21,6 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: getCopyright()
     }
-  }
+  },
+  srcDir: './src'
 })
