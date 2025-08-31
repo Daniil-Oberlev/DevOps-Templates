@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-import { getCopyright } from './utils/constants'
+import { getCopyright } from '../utils/constants'
 
 export default defineConfig({
   title: 'DevOps Templates',
@@ -10,6 +10,7 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', href: '/favicons/apple-icon.png' }],
     ['link', { rel: 'icon', href: '/favicons/icon.svg' }]
   ],
+  lang: 'ru-RU',
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
