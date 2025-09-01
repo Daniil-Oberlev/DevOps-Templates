@@ -7,7 +7,10 @@ build:
     docker build -t {{image-name}}:latest  .
 
 run:
-    docker run -d --name {{container-name}} -p {{host_port}}:{{internal_port}} {{image-name}}:latest
+  docker run -d \
+    --name {{container-name}} \
+    -p {{host_port}}:{{internal_port}} \
+    {{image-name}}:latest
 
 check:
     sleep 5
