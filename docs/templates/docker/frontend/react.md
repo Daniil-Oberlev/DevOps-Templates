@@ -10,10 +10,9 @@
 
 ## 🐳 Dockerfile
 
-:::tabs
-== npm
+::: code-group
 
-```Dockerfile
+```Dockerfile [npm]
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -40,9 +39,7 @@ ENV NODE_ENV=production
 CMD ["serve","-s","build","-l","5173"]
 ```
 
-== yarn
-
-```Dockerfile
+```Dockerfile [yarn]
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -69,9 +66,7 @@ ENV NODE_ENV=production
 CMD ["serve","-s","build","-l","5173"]
 ```
 
-== pnpm
-
-```Dockerfile
+```Dockerfile [pnpm]
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -142,32 +137,13 @@ coverage
    - Сохраните .dockerignore в корне проекта
 3. Соберите образ:
 
-:::tabs key:bash_and_just
-== bash
+::: code-group
 
-```bash
+```bash [bash]
 docker build -t my-react-app:latest .
 ```
 
-== justfile
-
-### 📋 Предварительные требования перед использованием Just
-
-- Установлен [Just](https://just.systems/man/en/).
-- Скопирован предложенный [justfile](../../tools/)
-
-Рекомендуемо заменить строки в `justfile` на
-
-```justfile
-image-name := "my-react-app"
-container-name := "my-react-app"
-host_port := "5173"
-internal_port := "5173"
-```
-
-- Соберите образ:
-
-```bash
+```bash [just]
 just build
 ```
 
@@ -175,16 +151,13 @@ just build
 
 1. Запустите контейнер
 
-:::tabs key:bash_and_just
-== bash
+::: code-group
 
-```bash
+```bash [bash]
 docker run -p 5173:5173 my-react-app
 ```
 
-== justfile
-
-```bash
+```bash [just]
 just run
 ```
 

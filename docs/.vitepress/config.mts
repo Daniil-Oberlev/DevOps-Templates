@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 import { getCopyright } from '../utils/constants'
 
@@ -78,8 +78,11 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
-      md.use(tabsMarkdownPlugin)
+      md.use(groupIconMdPlugin)
     }
+  },
+  vite: {
+    plugins: [groupIconVitePlugin()]
   },
   ignoreDeadLinks: false
 })
