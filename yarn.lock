@@ -767,7 +767,12 @@ vfile@^6.0.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitepress@^2.0.0-alpha.12:
+vitepress-plugin-tabs@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.npmjs.org/vitepress-plugin-tabs/-/vitepress-plugin-tabs-0.7.1.tgz"
+  integrity sha512-jxJvsicxnMSIYX9b8mAFLD2nwyKUcMO10dEt4nDSbinZhM8cGvAmMFOHPdf6TBX6gYZRl+/++/iYHtoM14fERQ==
+
+vitepress@^1.0.0, vitepress@^2.0.0-alpha.12:
   version "2.0.0-alpha.12"
   resolved "https://registry.npmjs.org/vitepress/-/vitepress-2.0.0-alpha.12.tgz"
   integrity sha512-yZwCwRRepcpN5QeAhwSnEJxS3I6zJcVixqL1dnm6km4cnriLpQyy2sXQDsE5Ti3pxGPbhU51nTMwI+XC1KNnJg==
