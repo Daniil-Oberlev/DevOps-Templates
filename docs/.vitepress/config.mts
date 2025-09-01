@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 import { getCopyright } from '../utils/constants'
 
@@ -73,6 +74,11 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: getCopyright()
+    }
+  },
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
     }
   }
 })
