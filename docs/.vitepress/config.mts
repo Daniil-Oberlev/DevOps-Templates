@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 import { getCopyright } from '../utils/constants'
 
 export default defineConfig({
-  base: '/DevOps-Templates/',
+  base: '/devops-templates/',
   title: 'DevOps Templates',
   description:
     'Набор шаблонов, скриптов и конфигураций для ускорения развертывания, обеспечения безопасности и стандартизации DevOps-процессов',
   head: [
-    ['link', { rel: 'apple-touch-icon', href: '/favicons/apple-icon.png' }],
-    ['link', { rel: 'icon', href: '/favicons/icon.svg' }]
+    ['link', { rel: 'apple-touch-icon', href: '/devops-templates/favicons/apple-icon.png' }],
+    ['link', { rel: 'icon', href: '/devops-templates/favicons/icon.svg' }]
   ],
   lang: 'ru-RU',
   themeConfig: {
