@@ -173,7 +173,7 @@ just build
 
 :::
 
-1. Запустите контейнер
+4. Запустите контейнер
 
 :::tabs key:bash_and_just
 == bash
