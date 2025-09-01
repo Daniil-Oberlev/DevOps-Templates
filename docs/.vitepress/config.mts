@@ -4,7 +4,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 import { getCopyright } from '../utils/constants'
 
 export default defineConfig({
-  base: '/devops-templates/',
+  base: '/DevOps-Templates/',
   title: 'DevOps Templates',
   description:
     'Набор шаблонов, скриптов и конфигураций для ускорения развертывания, обеспечения безопасности и стандартизации DevOps-процессов',
