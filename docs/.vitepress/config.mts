@@ -9,8 +9,8 @@ export default defineConfig({
   description:
     'Набор шаблонов, скриптов и конфигураций для ускорения развертывания, обеспечения безопасности и стандартизации DevOps-процессов',
   head: [
-    ['link', { rel: 'apple-touch-icon', href: '/devops-templates/favicons/apple-icon.png' }],
-    ['link', { rel: 'icon', href: '/devops-templates/favicons/icon.svg' }]
+    ['link', { rel: 'apple-touch-icon', href: '/DevOps-Templates/favicons/apple-icon.png' }],
+    ['link', { rel: 'icon', href: '/DevOps-Templates/favicons/icon.svg' }]
   ],
   lang: 'ru-RU',
   themeConfig: {
