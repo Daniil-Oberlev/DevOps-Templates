@@ -1,8 +1,18 @@
+.vscode
+.idea
+
 .git
+.github
+.gitignore
+.gitattributes
+
 bin
+dist
 tests
+
+.env
 
 *.md
 *.log
-.env
-.gitignore
+
+
