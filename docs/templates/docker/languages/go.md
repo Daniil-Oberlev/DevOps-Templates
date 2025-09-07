@@ -109,7 +109,7 @@ just run
 5. Проверка работы:
 
 - Откройте браузер и перейдите по адресу `http://localhost:8080`
-- Проверьте healthcheck: curl `http://localhost:8080/health`
+- Проверьте healthcheck: `curl http://localhost:8080/health`
 
 ## ⚙️ Переменные окружения
 
