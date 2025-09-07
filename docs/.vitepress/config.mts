@@ -74,6 +74,11 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: getCopyright()
+    },
+    editLink: {
+      pattern: ({ filePath }) => {
+        return `https://github.com/Daniil-Oberlev/DevOps-Templates/edit/main/docs/${filePath}`
+      }
     }
   },
   markdown: {
@@ -84,5 +89,6 @@ export default defineConfig({
   vite: {
     plugins: [groupIconVitePlugin()]
   },
-  ignoreDeadLinks: false
+  ignoreDeadLinks: false,
+  lastUpdated: true
 })
