@@ -6,7 +6,7 @@ on:
     branches: [main, develop]
   schedule:
     - cron: '0 0 * * 0' # Каждое воскресенье в 00:00 UTC
-  workflow_dispatch: # Ручной запуск через GitHub UI
+  workflow_dispatch:
 
 permissions:
   actions: read
