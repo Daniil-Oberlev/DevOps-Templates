@@ -25,6 +25,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Docker',
+        link: '/templates/docker/',
         collapsed: false,
         items: [
           {
@@ -69,6 +70,7 @@ export default defineConfig({
       },
       {
         text: 'GitHub Actions',
+        link: '/templates/github-actions/',
         collapsed: false,
         items: [
           {
@@ -195,13 +197,37 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Nginx',
+        collapsed: false,
+        link: '/templates/nginx/',
+        items: [
+          {
+            text: 'Basic',
+            link: '/templates/nginx/basic'
+          },
+          {
+            text: 'Load Balancer',
+            link: '/templates/nginx/load-balancer'
+          },
+          {
+            text: 'Reverse Proxy',
+            link: '/templates/nginx/reverse-proxy'
+          },
+          {
+            text: 'SPA',
+            link: '/templates/nginx/spa'
+          },
+          {
+            text: 'SSL',
+            link: '/templates/nginx/ssl'
+          }
+        ]
+      },
+      {
         text: 'Kubernetes'
       },
       {
         text: 'Jenkins'
-      },
-      {
-        text: 'Nginx'
       },
       {
         text: 'Scripts'
