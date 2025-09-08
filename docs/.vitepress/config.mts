@@ -25,6 +25,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Docker',
+        collapsed: false,
         items: [
           {
             text: 'Frontend',
@@ -43,6 +44,10 @@ export default defineConfig({
             text: 'Languages',
             items: [
               {
+                text: 'C#',
+                link: '/templates/docker/languages/csharp'
+              },
+              {
                 text: 'Go',
                 link: '/templates/docker/languages/go'
               },
@@ -53,6 +58,130 @@ export default defineConfig({
               {
                 text: 'Python',
                 link: '/templates/docker/languages/python'
+              },
+              {
+                text: 'Rust',
+                link: '/templates/docker/languages/rust'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        text: 'GitHub Actions',
+        collapsed: false,
+        items: [
+          {
+            text: 'CI',
+            items: [
+              {
+                text: 'Languages',
+                items: [
+                  {
+                    text: 'Go',
+                    link: '/templates/github-actions/CI/languages/go'
+                  },
+                  {
+                    text: 'Node.js',
+                    link: '/templates/github-actions/CI/languages/node'
+                  },
+                  {
+                    text: 'Python',
+                    link: '/templates/github-actions/CI/languages/python'
+                  }
+                ]
+              },
+              {
+                text: 'Matrices',
+                items: [
+                  {
+                    text: 'Go',
+                    link: '/templates/github-actions/CI/matrices/go'
+                  },
+                  {
+                    text: 'Node.js',
+                    link: '/templates/github-actions/CI/matrices/node'
+                  },
+                  {
+                    text: 'Python',
+                    link: '/templates/github-actions/CI/matrices/python'
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            text: 'Security',
+            items: [
+              {
+                text: 'Containers',
+                items: [
+                  {
+                    text: 'Docker',
+                    link: '/templates/github-actions/security/containers/docker'
+                  },
+                  {
+                    text: 'Trivy',
+                    link: '/templates/github-actions/security/containers/trivy'
+                  }
+                ]
+              },
+              {
+                text: 'SAST',
+                items: [
+                  {
+                    text: 'CodeQL',
+                    link: '/templates/github-actions/security/sast/codeql'
+                  },
+                  {
+                    text: 'Semgrep',
+                    link: '/templates/github-actions/security/sast/semgrep'
+                  }
+                ]
+              },
+              {
+                text: 'SCA',
+                items: [
+                  {
+                    text: 'Dependabot',
+                    link: '/templates/github-actions/security/sca/dependabot'
+                  },
+                  {
+                    text: 'Snyk',
+                    link: '/templates/github-actions/security/sca/snyk'
+                  }
+                ]
+              },
+              {
+                text: 'Utilities',
+                items: [
+                  {
+                    text: 'Notifications',
+                    items: [
+                      {
+                        text: 'Email',
+                        link: '/templates/github-actions/utilities/notifications/email'
+                      },
+                      {
+                        text: 'Slack',
+                        link: '/templates/github-actions/utilities/notifications/slack'
+                      }
+                    ]
+                  },
+                  {
+                    text: 'Reports',
+                    items: [
+                      {
+                        text: 'Coverage',
+                        link: '/templates/github-actions/utilities/reports/coverage'
+                      },
+                      {
+                        text: 'Test',
+                        link: '/templates/github-actions/utilities/reports/test'
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -60,9 +189,6 @@ export default defineConfig({
       },
       {
         text: 'Kubernetes'
-      },
-      {
-        text: 'GitHub Actions'
       },
       {
         text: 'Jenkins'
