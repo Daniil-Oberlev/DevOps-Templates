@@ -120,8 +120,8 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: 'Docker',
-                    link: '/templates/github-actions/security/containers/docker'
+                    text: 'Docker Lint',
+                    link: '/templates/github-actions/security/containers/docker-lint'
                   },
                   {
                     text: 'Trivy',

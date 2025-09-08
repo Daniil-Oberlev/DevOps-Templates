@@ -1,10 +1,11 @@
 name: Dockerfile Lint
+
 on:
   push:
     branches: [main, develop]
   pull_request:
     branches: [main, develop]
-  workflow_dispatch: # Ручной запуск через GitHub UI
+  workflow_dispatch:
 
 permissions:
   contents: read
