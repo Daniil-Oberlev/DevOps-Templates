@@ -156,36 +156,37 @@ export default defineConfig({
                     link: '/templates/github-actions/security/sca/snyk'
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            text: 'Utilities',
+            items: [
               {
-                text: 'Utilities',
+                text: 'Notifications',
                 collapsed: true,
                 items: [
                   {
-                    text: 'Notifications',
-                    items: [
-                      {
-                        text: 'Email',
-                        link: '/templates/github-actions/utilities/notifications/email'
-                      },
-                      {
-                        text: 'Slack',
-                        link: '/templates/github-actions/utilities/notifications/slack'
-                      }
-                    ]
+                    text: 'Email',
+                    link: '/templates/github-actions/utilities/notifications/email'
                   },
                   {
-                    text: 'Reports',
-                    items: [
-                      {
-                        text: 'Coverage',
-                        link: '/templates/github-actions/utilities/reports/coverage'
-                      },
-                      {
-                        text: 'Test',
-                        link: '/templates/github-actions/utilities/reports/test'
-                      }
-                    ]
+                    text: 'Slack',
+                    link: '/templates/github-actions/utilities/notifications/slack'
+                  }
+                ]
+              },
+              {
+                text: 'Reports',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'Coverage',
+                    link: '/templates/github-actions/utilities/reports/coverage'
+                  },
+                  {
+                    text: 'Test',
+                    link: '/templates/github-actions/utilities/reports/test'
                   }
                 ]
               }
