@@ -1,0 +1,7 @@
+rules:
+  - id: no-hardcoded-credentials
+    patterns:
+      - pattern: password = "..."
+    message: Hardcoded credentials detected
+    severity: ERROR
+    languages: [python]
