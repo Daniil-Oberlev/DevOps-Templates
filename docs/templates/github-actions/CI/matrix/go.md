@@ -5,6 +5,7 @@
 ## ⚙️ GitHub Action
 
 ```yaml
+# .github/workflows/ci-go.yml
 name: CI Go Matrix
 
 on:
