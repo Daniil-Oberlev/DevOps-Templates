@@ -1,0 +1,10 @@
+name: Custom CodeQL Config
+paths:
+  - 'src/**' # Сканировать только папку src
+paths-ignore:
+  - 'tests/**' # Игнорировать тесты
+  - 'vendor/**' # Игнорировать зависимости
+queries:
+  - uses: security-and-quality # Стандартные запросы
+  - uses: ./custom-queries/my-rule.ql # Кастомные запросы
+disable-default-queries: false

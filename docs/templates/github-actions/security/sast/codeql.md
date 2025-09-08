@@ -64,10 +64,10 @@ jobs:
 ```bash
 .
 ├── .github/
+│   ├── codeql-config.yml                 # Конфигурация CodeQL (опционально)
 │   └── workflows/
 │       └── codeql-analysis.yml           # Этот workflow
-├── .github/
-│   └── codeql-config.yml                 # Конфигурация CodeQL (опционально)
+
 ├── **/*.js, **/*.py, **/*.java, **/*.go  # Исходный код
 └── go.mod, package.json, pom.xml, etc.   # Манифесты зависимостей (опционально)
 ```
