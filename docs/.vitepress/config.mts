@@ -76,6 +76,7 @@ export default defineConfig({
             items: [
               {
                 text: 'Basic',
+                collapsed: true,
                 items: [
                   {
                     text: 'Go',
@@ -93,6 +94,7 @@ export default defineConfig({
               },
               {
                 text: 'Matrix',
+                collapsed: true,
                 items: [
                   {
                     text: 'Go',
@@ -115,6 +117,7 @@ export default defineConfig({
             items: [
               {
                 text: 'Containers',
+                collapsed: true,
                 items: [
                   {
                     text: 'Docker',
@@ -128,6 +131,7 @@ export default defineConfig({
               },
               {
                 text: 'SAST',
+                collapsed: true,
                 items: [
                   {
                     text: 'CodeQL',
@@ -141,6 +145,7 @@ export default defineConfig({
               },
               {
                 text: 'SCA',
+                collapsed: true,
                 items: [
                   {
                     text: 'Dependabot',
@@ -154,6 +159,7 @@ export default defineConfig({
               },
               {
                 text: 'Utilities',
+                collapsed: true,
                 items: [
                   {
                     text: 'Notifications',
