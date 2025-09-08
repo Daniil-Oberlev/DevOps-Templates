@@ -75,36 +75,36 @@ export default defineConfig({
             text: 'CI',
             items: [
               {
-                text: 'Languages',
+                text: 'Basic',
                 items: [
                   {
                     text: 'Go',
-                    link: '/templates/github-actions/CI/languages/go'
+                    link: '/templates/github-actions/CI/basic/go'
                   },
                   {
                     text: 'Node.js',
-                    link: '/templates/github-actions/CI/languages/node'
+                    link: '/templates/github-actions/CI/basic/node'
                   },
                   {
                     text: 'Python',
-                    link: '/templates/github-actions/CI/languages/python'
+                    link: '/templates/github-actions/CI/basic/python'
                   }
                 ]
               },
               {
-                text: 'Matrices',
+                text: 'Matrix',
                 items: [
                   {
                     text: 'Go',
-                    link: '/templates/github-actions/CI/matrices/go'
+                    link: '/templates/github-actions/CI/matrix/go'
                   },
                   {
                     text: 'Node.js',
-                    link: '/templates/github-actions/CI/matrices/node'
+                    link: '/templates/github-actions/CI/matrix/node'
                   },
                   {
                     text: 'Python',
-                    link: '/templates/github-actions/CI/matrices/python'
+                    link: '/templates/github-actions/CI/matrix/python'
                   }
                 ]
               }
