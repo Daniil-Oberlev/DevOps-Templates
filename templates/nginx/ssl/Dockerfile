@@ -7,4 +7,4 @@ COPY ssl/ /etc/nginx/ssl/
 
 EXPOSE 80 443
 HEALTHCHECK --interval=30s --timeout=3s \
-  CMD curl -f https://localhost/ || curl -f http://localhost/ || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://localhost/ || exit 1

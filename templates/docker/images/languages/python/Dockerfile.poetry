@@ -1,0 +1,35 @@
+FROM python:3.11-slim AS builder
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir poetry
+
+COPY pyproject.toml poetry.lock .
+
+RUN poetry config virtualenvs.create false && \
+    poetry install --only main --no-interaction --no-ansi
+
+COPY . .
+
+FROM python:3.11-slim AS production
+
+WORKDIR /app
+
+RUN groupadd -g 1000 appgroup && \
+    useradd -u 1000 -g appgroup -s /bin/bash -m appuser && \
+    chown appuser:appgroup /app
+
+COPY --from=builder --chown=appuser:appgroup /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder --chown=appuser:appgroup /app .
+
+USER appuser
+
+ENV PYTHONPATH="/app" \
+    PYTHONUNBUFFERED=1 \
+    PORT=8000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD wget --no-verbose --tries=1 --spider http://localhost:${PORT}/health || exit 11
+
+EXPOSE 8000
+CMD ["python", "-m", "app.main"]
