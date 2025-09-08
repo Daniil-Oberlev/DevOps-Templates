@@ -1,5 +1,9 @@
-.git
+.vscode
+.idea
 
+.git
+.github
 .gitignore
 .gitattributes
-*.md
+
+*.log
