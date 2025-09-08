@@ -2,10 +2,13 @@ FROM nginx:1.28-alpine
 
 RUN rm -f /etc/nginx/conf.d/default.conf
 
-COPY nginx.conf /etc/nginx/conf.d/
-COPY index.html /usr/share/nginx/html/
-COPY 50x.html /usr/share/nginx/html/
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/index.html /usr/share/nginx/html/
+COPY nginx/50x.html /usr/share/nginx/html/
+
+USER nginx
 
 EXPOSE 80
+
 HEALTHCHECK --interval=30s --timeout=3s \
-  CMD wget --no-verbose --tries=1 --spider http://localhost/ || exit 1
+  CMD curl -fs http://localhost/ || exit 1
