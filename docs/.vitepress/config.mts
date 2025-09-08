@@ -1,5 +1,9 @@
 import { defineConfig } from 'vitepress'
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+  localIconLoader
+} from 'vitepress-plugin-group-icons'
 
 import { getCopyright } from '../utils/constants'
 
@@ -87,7 +91,16 @@ export default defineConfig({
     }
   },
   vite: {
-    plugins: [groupIconVitePlugin()]
+    plugins: [
+      groupIconVitePlugin({
+        customIcon: {
+          'bash': localIconLoader(import.meta.url, './assets/bash.svg'),
+          'poetry': localIconLoader(import.meta.url, './assets/poetry.svg'),
+          'uv': localIconLoader(import.meta.url, './assets/uv.svg'),
+          'requirements.txt': 'vscode-icons:file-type-python'
+        }
+      })
+    ]
   },
   ignoreDeadLinks: false,
   lastUpdated: true
