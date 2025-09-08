@@ -5,6 +5,7 @@
 ## ⚙️ GitHub Action
 
 ```yaml
+# .github/workflows/trivy-scan.yml
 name: Trivy Container Scan
 
 on:
