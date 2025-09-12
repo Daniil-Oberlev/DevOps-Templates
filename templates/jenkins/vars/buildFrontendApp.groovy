@@ -1,18 +1,46 @@
 void call(Map<String, Object> config = [:]) {
     Map<String, Object> defaults = [
         nodeVersion: '18',
-        buildScript: 'run build',
-        installArgs: ''
+        buildScript: 'build',
+        installArgs: '',
+        packageManager: 'npm'
     ]
 
     Map<String, Object> effectiveConfig = defaults + config
 
-    nodejs(config.nodeVersion) {
+    nodejs(effectiveConfig.nodeVersion) {
         stage('Install Dependencies') {
-            bat "npm install ${effectiveConfig.installArgs}"
+            executeCommand(getInstallCommand(effectiveConfig))
         }
         stage('Build Project') {
-            bat "npm ${effectiveConfig.buildScript}"
+            executeCommand(getBuildCommand(effectiveConfig))
         }
+    }
+}
+
+private String getInstallCommand(Map config) {
+    Map commands = [
+        'npm': "npm install ${config.installArgs}",
+        'yarn': "yarn install ${config.installArgs}",
+        'pnpm': "pnpm install ${config.installArgs}"
+    ]
+    return commands[config.packageManager].trim()
+}
+
+private String getBuildCommand(Map config) {
+    Map commands = [
+        'npm': "npm run ${config.buildScript}",
+        'yarn': "yarn ${config.buildScript}",
+        'pnpm': "pnpm run ${config.buildScript}"
+    ]
+    return commands[config.packageManager]
+}
+
+private void executeCommand(String command) {
+    /* groovylint-disable-next-line UnnecessaryGetter */
+    if (isUnix()) {
+        sh command
+    } else {
+        bat command
     }
 }
